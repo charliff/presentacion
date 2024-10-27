@@ -1,0 +1,131 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri, sans-serif;
+    color: #17636d;
+    line-height: 1.6;
+}
+
+header {
+    background: #1792b8;
+    color: #fff;
+    padding: 2em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    margin-top: 1em;
+    text-align: center;
+    padding: 1em;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    object-fit: cover;
+    border: 3px solid #006747;
+}
+
+.content-section {
+    padding: 2em 1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.project-item {
+    background: #f4f4f4;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.in {
+    width: 50px;
+    height: 50px;
+
+}
+.in:hover {
+    opacity: 60%;
+}
+
+
+.gh {
+    width: 70px;
+    height: 35x;
+
+}
+.gh:hover {
+    opacity: 60%;
+}
+
+.cr {
+    width: 50px;
+    height: 50px;
+}
+.cr:hover {
+    opacity: 60%;
+}
+
+footer {
+    background: #1792b8;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Medidas  diseño responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .hero h1 {
+        font-size: 1.2em;
+    }
+}
